@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO On-Page -->
+    <title>TR Comini - Transporte de Cargas Rodoviárias</title>
+    <meta name="description" content="Transporte de Cargas Rodoviárias. Serviço de transporte de cargas dedicadas interestaduais, nas Rotas São Paulo para Goiânia e Distrito Federal.">
+    <meta name="keywords" content="transporte, cargas, rodoviário, são paulo, goiânia, distrito federal, logística">
+    <meta name="author" content="TR Comini">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon.png">
+
+    <!-- Bootstrap 5 e Fontes -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Estilos Customizados -->
+    <style>
+        :root {
+            --cor-primaria: #ffffff;
+            --cor-verde: #4db846;
+            --cor-fundo: #f8f9fa;
+            --cor-fundo-escuro: #000000; /* Alterado para preto */
+            --cor-texto: #232323;
+            --cor-texto-claro: #f8f9fa;
+            --fonte-principal: 'Poppins', sans-serif;
+        }
+
+        body {
+            font-family: var(--fonte-principal);
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            overflow-x: hidden;
+            padding-top: 90px; /* Espaço para o navbar fixo */
+        }
+
+        .btn-verde {
+            background-color: var(--cor-verde);
+            border-color: var(--cor-verde);
+            color: var(--cor-primaria);
+            padding: 0.7rem 1.8rem;
+            font-weight: 600;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        .btn-verde:hover {
+            background-color: #3c9437;
+            border-color: #3c9437;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            color: var(--cor-primaria);
+        }
+
+        /* Header */
+        .navbar {
+            background-color: var(--cor-fundo-escuro) !important;
+            padding: 1rem 0;
+            transition: padding 0.3s ease-in-out;
+        }
+        .navbar-brand img {
+            height: 60px;
+            transition: height 0.3s ease-in-out;
+        }
+        .nav-link {
+            font-weight: 600;
+        }
+        .nav-link:hover {
+            color: var(--cor-verde) !important;
+        }
+        
+        /* Navbar Scrolled State */
+        .navbar.navbar-scrolled {
+            padding: 0.5rem 0;
+        }
+        .navbar.navbar-scrolled .navbar-brand img {
+            height: 45px;
+        }
+        
+        /* Seção Hero */
+        .hero-section {
+            background-image: url('desktop.avif'), linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+            background-blend-mode: overlay;
+            background-size: cover;
+            background-position: center;
+            color: var(--cor-primaria);
+            padding: 14rem 0;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+        
+        /* Seções Gerais */
+        section {
+            padding: 80px 0;
+        }
+        .section-subtitle {
+            font-weight: 600;
+            color: #555;
+        }
+        .section-title {
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* Seção Sobre e Serviços */
+        #sobre, #servicos {
+            background-color: #ffffff;
+        }
+        .img-container {
+            position: relative;
+        }
+        .img-container img {
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .btn-contatos {
+            width: 100%;
+            margin-top: -50px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Galeria */
+        .gallery-item {
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            overflow: hidden; /* Contém o efeito de zoom */
+        }
+        .gallery-item img {
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05); /* Efeito de zoom */
+        }
+
+        /* Contatos */
+        #contatos {
+            background-color: #ffffff;
+        }
+        .contact-card {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+        .contact-card i {
+            font-size: 2rem;
+            color: var(--cor-verde);
+            margin-bottom: 1rem;
+        }
+        .contact-card .contact-info {
+            text-align: center;
+        }
+        .contact-card p {
+            margin-bottom: 0.25rem;
+            color: var(--cor-verde);
+            font-weight: 600;
+        }
+        .contact-card small {
+            font-weight: 600;
+            color: #333;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: var(--cor-fundo-escuro);
+            color: var(--cor-texto-claro);
+            padding: 40px 0 20px 0;
+        }
+        footer a {
+            color: var(--cor-texto-claro);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: var(--cor-verde);
+        }
+        footer .social-icon {
+            font-size: 1.5rem;
+            margin: 0 10px;
+        }
+
+        /* Botão Flutuante do WhatsApp */
+        .whatsapp-flutuante {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+            text-decoration: none; /* Remove a linha */
+        }
+        .whatsapp-flutuante:hover {
+            transform: scale(1.1);
+            color: #FFF;
+            text-decoration: none; /* Garante que não tenha linha no hover */
+        }
+        
+        /* Ajustes para Mobile */
+        @media (max-width: 991.98px) {
+            .hero-section {
+                background-image: url('mobile.avif'), linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+            }
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+            .btn-contatos {
+                display: none; /* Esconde o botão sob a imagem no mobile */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header e Navegação -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="logo2-401x134.png" alt="Logo TR Comini">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link text-white" href="#hero">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#servicos">SERVIÇOS</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#contatos">CONTATOS</a></li>
+                        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                            <a href="https://api.whatsapp.com/send?phone=5511983650233" class="btn btn-verde" target="_blank" rel="noopener noreferrer">
+                                (11) 98365-0233 <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Hero -->
+        <section class="hero-section" id="hero">
+            <div class="container">
+                <h1 class="display-3">Transporte de Cargas Rodoviárias</h1>
+                <a href="https://api.whatsapp.com/send?phone=5511983650233" class="btn btn-lg btn-verde mt-4" target="_blank" rel="noopener noreferrer">
+                    Solicite Seu Orçamento <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção 'Sobre Nós' -->
+        <section id="sobre">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 text-center"> <!-- Imagem maior no desktop -->
+                        <div class="img-container">
+                            <img src="apresentacao-1200x744.jpg" class="img-fluid" alt="Apresentação da frota de caminhões TR Comini" loading="lazy">
+                        </div>
+                        <a href="#contatos" class="btn btn-verde btn-contatos d-none d-lg-inline-block">CONTATOS →</a>
+                    </div>
+                    <div class="col-lg-5 mt-5 mt-lg-0"> <!-- Texto ao lado -->
+                        <p class="section-subtitle">TR Comini / Conheça-nos</p>
+                        <h2 class="section-title">Somos a TR Comini</h2>
+                        <p>No ramo do transporte desde criança um dos fundadores da TR Comini, que viajava com o pai caminhoneiro, sonhava em ter sua própria carreta, em 2010 realizou esse sonho.</p>
+                        <p>Em 2011 surge a TR Comini, fruto do sonho de uma criança que viajava com o pai, hoje empresário, atende seus clientes com qualidade e eficiência!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Serviços -->
+        <section id="servicos">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 order-2 order-lg-1"> <!-- Texto ao lado -->
+                        <p class="section-subtitle">TR Comini / Serviços</p>
+                        <h2 class="section-title">Transporte de Cargas</h2>
+                        <p>Serviço de transporte de cargas dedicadas interestaduais, nas Rotas São Paulo para Goiânia e Distrito Federal, transporte de matérias primas, insumos e entre outros.</p>
+                        <p>Suas cargas críticas coletadas imediatamente e tratadas com a devida urgência.</p>
+                        <p><strong>Rapidez e agilidade é o nosso compromisso.</strong></p>
+                    </div>
+                    <div class="col-lg-7 text-center order-1 order-lg-2"> <!-- Imagem maior no desktop -->
+                         <div class="img-container">
+                             <img src="servicos-1-1200x872.jpg" class="img-fluid" alt="Caminhão TR Comini com lona preta em frente a palmeiras" loading="lazy">
+                         </div>
+                         <a href="#contatos" class="btn btn-verde btn-contatos d-none d-lg-inline-block">CONTATOS →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Galeria -->
+        <section id="galeria">
+             <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div class="gallery-item">
+                            <img src="01-886x816.jpg" class="img-fluid" alt="Galeria de fotos da frota TR Comini 1" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="gallery-item">
+                            <img src="02-886x816.jpg" class="img-fluid" alt="Galeria de fotos da frota TR Comini 2" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="gallery-item">
+                           <img src="03-886x816.jpg" class="img-fluid" alt="Galeria de fotos da frota TR Comini 3" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="gallery-item">
+                            <img src="04-886x816.jpg" class="img-fluid" alt="Galeria de fotos da frota TR Comini 4" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <!-- Seção Contatos -->
+        <section id="contatos">
+            <div class="container">
+                <h2 class="section-title text-center">CONTATOS</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="contact-card">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="contact-info">
+                                <small>TELEFONES</small>
+                                <p>(11) 94857-9080</p>
+                                <p>(11) 98726-9275</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="contact-card">
+                            <i class="fab fa-whatsapp"></i>
+                             <div class="contact-info">
+                                <small>WHATSAPP</small>
+                                <p>(11) 98365-0233</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                             <div class="contact-info">
+                                <small>E-MAIL</small>
+                                <p>comercial@trcomini.com.br</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="contact-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                             <div class="contact-info">
+                                <small>ENDEREÇO</small>
+                                <p>Av. Carlos Ângelo Mathion, 901, Jardim Tamoio, Jundiaí/SP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="mb-3">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5511983650233" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="mb-2">Todos os direitos reservados 2025 TR Comini | CNPJ: 37.716.884/0001-95</p>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=5511983650233&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os." class="whatsapp-flutuante" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <script>
+        // Script para encolher a navbar ao rolar
+        document.addEventListener("DOMContentLoaded", function() {
+            const navbar = document.querySelector('.navbar');
+            if (navbar) {
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 50) {
+                        navbar.classList.add('navbar-scrolled');
+                    } else {
+                        navbar.classList.remove('navbar-scrolled');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
