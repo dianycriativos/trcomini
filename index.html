@@ -42,6 +42,21 @@
             padding-top: 90px; /* Espaço para o navbar fixo */
         }
 
+        /* Barra de Rolagem Personalizada (Desktop) */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #222;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--cor-verde);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3c9437;
+        }
+
         .btn-verde {
             background-color: var(--cor-verde);
             border-color: var(--cor-verde);
@@ -253,7 +268,8 @@
     <!-- Header e Navegação -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container">
+            <!-- Container-fluid para ocupar mais espaço, com padding nas laterais em telas grandes (px-lg-5) -->
+            <div class="container-fluid px-lg-5">
                 <a class="navbar-brand" href="#">
                     <img src="logo2-401x134.png" alt="Logo TR Comini">
                 </a>
@@ -266,8 +282,9 @@
                         <li class="nav-item"><a class="nav-link text-white" href="#servicos">SERVIÇOS</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#contatos">CONTATOS</a></li>
                         <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-                            <a href="https://api.whatsapp.com/send?phone=5511983650233" class="btn btn-verde" target="_blank" rel="noopener noreferrer">
-                                (11) 98365-0233 <i class="fab fa-whatsapp"></i>
+                            <!-- NÚMERO SEM ALTERAÇÃO -->
+                            <a href="https://api.whatsapp.com/send?phone=5511948579080" class="btn btn-verde" target="_blank" rel="noopener noreferrer">
+                                (11) 94857-9080 <i class="fab fa-whatsapp"></i>
                             </a>
                         </li>
                     </ul>
@@ -281,7 +298,8 @@
         <section class="hero-section" id="hero">
             <div class="container">
                 <h1 class="display-3">Transporte de Cargas Rodoviárias</h1>
-                <a href="https://api.whatsapp.com/send?phone=5511983650233" class="btn btn-lg btn-verde mt-4" target="_blank" rel="noopener noreferrer">
+                <!-- NÚMERO SEM ALTERAÇÃO -->
+                <a href="https://api.whatsapp.com/send?phone=5511948579080" class="btn btn-lg btn-verde mt-4" target="_blank" rel="noopener noreferrer">
                     Solicite Seu Orçamento <i class="fab fa-whatsapp"></i>
                 </a>
             </div>
@@ -320,7 +338,7 @@
                     </div>
                     <div class="col-lg-7 text-center order-1 order-lg-2"> <!-- Imagem maior no desktop -->
                          <div class="img-container">
-                             <img src="servicos-1-1200x872.jpg" class="img-fluid" alt="Caminhão TR Comini com lona preta em frente a palmeiras" loading="lazy">
+                              <img src="servicos-1-1200x872.jpg" class="img-fluid" alt="Caminhão TR Comini com lona preta em frente a palmeiras" loading="lazy">
                          </div>
                          <a href="#contatos" class="btn btn-verde btn-contatos d-none d-lg-inline-block">CONTATOS →</a>
                     </div>
@@ -366,7 +384,8 @@
                             <i class="fas fa-phone-alt"></i>
                             <div class="contact-info">
                                 <small>TELEFONES</small>
-                                <p>(11) 94857-9080</p>
+                                <!-- NÚMERO ALTERADO -->
+                                <p>(11) 98365-0233</p>
                                 <p>(11) 98726-9275</p>
                             </div>
                         </div>
@@ -376,7 +395,8 @@
                             <i class="fab fa-whatsapp"></i>
                              <div class="contact-info">
                                 <small>WHATSAPP</small>
-                                <p>(11) 98365-0233</p>
+                                <!-- NÚMERO SEM ALTERAÇÃO -->
+                                <p>(11) 94857-9080</p>
                             </div>
                         </div>
                     </div>
@@ -409,14 +429,16 @@
             <div class="mb-3">
                 <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=5511983650233" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <!-- NÚMERO SEM ALTERAÇÃO -->
+                <a href="https://api.whatsapp.com/send?phone=5511948579080" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
             </div>
             <p class="mb-2">Todos os direitos reservados 2025 TR Comini | CNPJ: 37.716.884/0001-95</p>
         </div>
     </footer>
 
     <!-- Botão Flutuante do WhatsApp -->
-    <a href="https://api.whatsapp.com/send?phone=5511983650233&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os." class="whatsapp-flutuante" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+    <!-- NÚMERO SEM ALTERAÇÃO -->
+    <a href="https://api.whatsapp.com/send?phone=5511948579080&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os." class="whatsapp-flutuante" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
