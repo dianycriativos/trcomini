@@ -1,0 +1,5 @@
+# Permite que todos os robôs de busca rastreiem o site.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.trcomini.com.br/sitemap.xml
