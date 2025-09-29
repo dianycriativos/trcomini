@@ -3,41 +3,36 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
-    <loc>https://www.trcomini.com/</loc>
+    <loc>https://trcomini.com/</loc>
     <lastmod>2025-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    
     <image:image>
-      <image:loc>https://www.trcomini.com/logo2-401x134.png</image:loc>
-      <image:title>Logo TR Comini - Transporte de Cargas</image:title>
+      <image:loc>https://trcomini.com/logo2-401x134.png</image:loc>
+      <image:title>Logo TR Comini</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://www.trcomini.com/desktop.avif</image:loc>
-      <image:title>Frota de caminhões TR Comini na estrada</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.trcomini.com/apresentacao-1200x744.jpg</image:loc>
+      <image:loc>https://trcomini.com/apresentacao-1200x744.jpg</image:loc>
       <image:title>Apresentação da frota de caminhões TR Comini</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://www.trcomini.com/servicos-1-1200x872.jpg</image:loc>
-      <image:title>Caminhão TR Comini realizando transporte de cargas</image:title>
+      <image:loc>https://trcomini.com/servicos-1-1200x872.jpg</image:loc>
+      <image:title>Caminhão TR Comini com lona preta em frente a palmeiras</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://www.trcomini.com/01-886x816.jpg</image:loc>
+      <image:loc>https://trcomini.com/01-886x816.jpg</image:loc>
       <image:title>Galeria de fotos da frota TR Comini 1</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://www.trcomini.com/02-886x816.jpg</image:loc>
+      <image:loc>https://trcomini.com/02-886x816.jpg</image:loc>
       <image:title>Galeria de fotos da frota TR Comini 2</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://www.trcomini.com/03-886x816.jpg</image:loc>
+      <image:loc>https://trcomini.com/03-886x816.jpg</image:loc>
       <image:title>Galeria de fotos da frota TR Comini 3</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://www.trcomini.com/04-886x816.jpg</image:loc>
+      <image:loc>https://trcomini.com/04-886x816.jpg</image:loc>
       <image:title>Galeria de fotos da frota TR Comini 4</image:title>
     </image:image>
   </url>
