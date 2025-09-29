@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-<url>
-  <loc>https://www.trcomini.com/</loc>
-  <priority>1.00</priority>
-</url>
-
+  <url>
+    <loc>https://www.trcomini.com/</loc>
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    
+    <image:image>
+      <image:loc>https://www.trcomini.com/logo2-401x134.png</image:loc>
+      <image:title>Logo TR Comini - Transporte de Cargas</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.trcomini.com/desktop.avif</image:loc>
+      <image:title>Frota de caminhões TR Comini na estrada</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.trcomini.com/apresentacao-1200x744.jpg</image:loc>
+      <image:title>Apresentação da frota de caminhões TR Comini</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.trcomini.com/servicos-1-1200x872.jpg</image:loc>
+      <image:title>Caminhão TR Comini realizando transporte de cargas</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.trcomini.com/01-886x816.jpg</image:loc>
+      <image:title>Galeria de fotos da frota TR Comini 1</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.trcomini.com/02-886x816.jpg</image:loc>
+      <image:title>Galeria de fotos da frota TR Comini 2</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.trcomini.com/03-886x816.jpg</image:loc>
+      <image:title>Galeria de fotos da frota TR Comini 3</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.trcomini.com/04-886x816.jpg</image:loc>
+      <image:title>Galeria de fotos da frota TR Comini 4</image:title>
+    </image:image>
+  </url>
 
 </urlset>
