@@ -2,5 +2,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.trcomini.com/sitemap.xml
-
+# Aponta para o sitemap canônico do site.
+Sitemap: https://trcomini.com/sitemap.xml
