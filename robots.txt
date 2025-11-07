@@ -1,6 +1,21 @@
-# Permite que todos os robôs de busca rastreiem o site.
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
 
-# Aponta para o sitemap canônico do site.
+Sitemap
+
 Sitemap: https://trcomini.com/sitemap.xml
+
+Permitir rastreamento rápido do Google
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+Permitir rastreamento do Bing
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
