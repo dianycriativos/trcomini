@@ -1,40 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-
-  <url>
-    <loc>https://trcomini.com/</loc>
-    <lastmod>2025-09-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://trcomini.com/logo2-401x134.png</image:loc>
-      <image:title>Logo TR Comini</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://trcomini.com/apresentacao-1200x744.jpg</image:loc>
-      <image:title>Apresentação da frota de caminhões TR Comini</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://trcomini.com/servicos-1-1200x872.jpg</image:loc>
-      <image:title>Caminhão TR Comini com lona preta em frente a palmeiras</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://trcomini.com/01-886x816.jpg</image:loc>
-      <image:title>Galeria de fotos da frota TR Comini 1</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://trcomini.com/02-886x816.jpg</image:loc>
-      <image:title>Galeria de fotos da frota TR Comini 2</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://trcomini.com/03-886x816.jpg</image:loc>
-      <image:title>Galeria de fotos da frota TR Comini 3</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://trcomini.com/04-886x816.jpg</image:loc>
-      <image:title>Galeria de fotos da frota TR Comini 4</image:title>
-    </image:image>
-  </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Página Principal -->
+    <url>
+        <loc>https://trcomini.com/</loc>
+        <lastmod>2025-11-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
 </urlset>
